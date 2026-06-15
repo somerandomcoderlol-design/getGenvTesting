@@ -11,3 +11,5 @@ end)
 task.delay(3, function()
     env.farming = not env.farming
 end)
+
+return env
