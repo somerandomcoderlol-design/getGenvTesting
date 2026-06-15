@@ -1,7 +1,7 @@
 local env = getgenv()
-local git = getgitpath()
+local git = "https://raw.githubusercontent.com/somerandomcoderlol-design/getGenvTesting/refs/heads/main/"
 
-local React = loadstring(game:HttpGet(git.."/Packages/React.lua"))()
+local React = loadstring(game:HttpGet(git.."Packages/React.lua"))()
 
 print(React)
 
