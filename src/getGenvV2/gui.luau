@@ -5,7 +5,7 @@ return function()
     container.IgnoreGuiInset = true
     container.ResetOnSpawn = true
 
-    container.Parent = game:GetService("CoreGui")
+    container.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 
     local content = Instance.new("Frame")
     content.Name = "Content"
