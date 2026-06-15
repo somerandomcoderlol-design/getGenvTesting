@@ -13,10 +13,20 @@ return function()
     content.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     content.Size = UDim2.fromScale(1, 1)
     content.Position = UDim2.fromScale(0.5, 0.5)
-
+    content.BackgroundTransparency = 1
     content.Parent = container
 
-    print(container.Parent)
+    local state = Instance.new("TextLabel")
+    state.Name = "State"
+    state.AnchorPoint = Vector2.new(0.5, 0.5)
+    state.BackgroundTransparency = 1
+    state.Position = UDim2.fromScale(0.5, 0.5)
+    state.Size = UDim2.fromScale(0.6, 0.5)
+    state.TextScaled = true
+
+    state.Text = "insert pun here"
+
+    state.Parent = content
 
     return container
 end
